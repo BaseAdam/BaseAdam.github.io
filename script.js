@@ -7,7 +7,7 @@ function selectOption(option) {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displayCatHeart(); // Display the cat-heart.gif
+            displayDogSecond(); // Display the cat-heart.gif
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
@@ -65,9 +65,9 @@ function displayDogSecond() {
     // Create a new Image element for the cat-heart
     var dogSecondImage = new Image();
     // Set the source (file path) for the cat-heart image
-    dogSecondImage.src = 'cat-heart.gif'; // Assuming the cat-heart image is named "cat-heart.gif"
+    dogSecondImage.src = 'misia2.gif'; // Assuming the cat-heart image is named "cat-heart.gif"
     // Set alternative text for the image (for accessibility)
-    dogSecondImage.alt = 'Cat Heart';
+    dogSecondImage.alt = 'Misia2';
     // When the cat-heart image is fully loaded, add it to the image container
     dogSecondImage.onload = function() {
         imageContainer.appendChild(dogSecondImage);
@@ -77,4 +77,4 @@ function displayDogSecond() {
 }
 
 // Display the cat.gif initially
-displayCat();
+displayDog();
